@@ -233,9 +233,9 @@ window.view = {
  		//this.getCanvas();
  		this.canvasContext.beginPath();
  		this.canvasContext.fillStyle = '#C2D995';
- 		this.canvasContext.fillRect (050, 050, 200, 250);
+ 		this.canvasContext.fillRect (50, 50, 200, 250);
  		this.canvasContext.strokeStyle = '#000000';
- 		this.canvasContext.rect(050, 050, 200, 250);
+ 		this.canvasContext.rect(50, 50, 200, 250);
  		this.canvasContext.stroke();	
  	},
  	// drawCircle: draws circle on canvasContext according given x and y coordinates.
@@ -262,11 +262,11 @@ window.view = {
     	displayFigures: function () {
     		this.drawDots();
     		this.drawFillRectangle();
-    		this.drawCircle(050, 050, '#000000');
+    		this.drawCircle(50, 50, '#000000');
 		this.drawCircle(240, 240, '#000000');
 		this.drawCircle(240, 290, '#000000');
-		this.drawCircle(050, 290, '#000000');
-		this.displayText('(x1, y1)', 040, 040); 
+		this.drawCircle(50, 290, '#000000');
+		this.displayText('(x1, y1)', 40, 40); 
 		this.displayText('(x2, y2)', 230, 230);
 		this.displayText('(x3, y3)', 240, 320);
 		this.displayText('(x4, y4)', 30, 320);
@@ -355,7 +355,7 @@ window.view = {
 			if (this.nextSiblingElement.id === 'codeContentIfElse4Id' || this.nextOfnextSiblingElement.id === 'codeContentIfElse6Id') {
 				if (this.nextSiblingElement.id === 'codeContentIfElse4Id') 
 					this.codeExecutionWithColour();
-				else if (model.valueOfX >= 050) 
+				else if (model.valueOfX >= 50) 
 					this.changeFlagValue('flagValue1', 'codeContentIfElse6Id', '1');
 				else
 					this.codeExecutionWithColourAndId('codeContentIfElse8Id');
@@ -371,7 +371,7 @@ window.view = {
 			if (this.nextOfnextSiblingElement.id === 'codeContentIfElse12Id' || this.nextOfnextSiblingElement.id === 'codeContentIfElse14Id') {
 				if (this.nextOfnextSiblingElement.id === 'codeContentIfElse12Id') 
 					this.codeExecutionWithColourAndId('codeContentIfElse12Id');
-				else if (model.valueOfY >= 050) 
+				else if (model.valueOfY >= 50) 
 					this.changeFlagValue('flagValue3', 'codeContentIfElse14Id', '1');
 				else
 					this.codeExecutionWithColourAndId('codeContentIfElse16Id');
@@ -387,7 +387,7 @@ window.view = {
 			if (this.nextOfnextSiblingElement.id === 'codeContentIfElse20Id' || this.nextOfnextSiblingElement.id === 'codeContentIfElse22Id') {
 				if (this.nextOfnextSiblingElement.id === 'codeContentIfElse20Id') 
 					this.codeExecutionWithColourAndId('codeContentIfElse20Id');
-				else if (model.valueOfX > 050 && model.valueOfX < 250 && model.valueOfY > 050 && model.valueOfY < 325) {
+				else if (model.valueOfX > 50 && model.valueOfX < 250 && model.valueOfY > 50 && model.valueOfY < 325) {
 					this.codeExecutionWithColourAndId('codeContentIfElse22Id');
 					this.displayTextWithColour('Output: INSIDE', 100, 40, '#FF2400');
 				}
@@ -418,7 +418,7 @@ window.view = {
 		}
 		if (this.nextSiblingElement.id === 'codeContentIfElseIf3Id')			
 			this.codeExecutionWithColourAndId('codeContentIfElseIf3aId');
-		if (this.nextSiblingElement.id === 'codeContentIfElseIf3bId' && model.valueOfX < 050) 
+		if (this.nextSiblingElement.id === 'codeContentIfElseIf3bId' && model.valueOfX < 50) 
 			this.changeFlagValue('flagValue1', 'codeContentIfElseIf5Id', '0');
 		if (this.nextSiblingElement.id === 'codeContentIfElseIf3bId' && model.valueOfX > 300) 
 			this.codeExecutionWithColourAndId('codeContentIfElseIf3cId');
@@ -446,7 +446,7 @@ window.view = {
 		}
 		if (this.nextSiblingElement.id ==='codeContentIfElseIf6Id' || this.nextSiblingElement.id ==='codeContentIfElseIf10Id') 
 			this.codeExecutionWithColourAndId('codeContentIfElseIf15Id');
-		if (this.nextSiblingElement.id === 'codeContentIfElseIf16Id' && !((050 <= model.valueOfX) && (model.valueOfX <= 275) && (75 <= model.valueOfY) && (model.valueOfY <= 325))) 
+		if (this.nextSiblingElement.id === 'codeContentIfElseIf16Id' && !((50 <= model.valueOfX) && (model.valueOfX <= 275) && (75 <= model.valueOfY) && (model.valueOfY <= 325))) 
 			this.codeExecutionWithColourAndId('codeContentIfElseIf19Id');
 		if (this.nextSiblingElement.id === 'codeContentIfElseIf20Id') {
 			this.codeExecutionWithColourAndId('codeContentIfElseIf21Id');
